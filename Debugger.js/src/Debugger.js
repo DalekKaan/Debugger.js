@@ -1,6 +1,6 @@
 function D() {}
-D.l=function(instence) {
-	console.log(instence);
+D.l=function(instance) {
+	console.log(instance);
 }
 D.gs=function(title,collapsed=false) {
 	if (collapsed) {
@@ -9,5 +9,11 @@ D.gs=function(title,collapsed=false) {
 	else {
 		console.group(title);
 	}
+}
+D.ge=function() {
+	console.groupEnd();
+}
+D.a=function(title) {
+	alert(title);
 }
 
